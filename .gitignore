@@ -32,6 +32,8 @@ migrate_working_dir/
 .pub/
 /build/
 
+/ios/Runner/GoogleService-info.plist
+
 # Web related
 lib/generated_plugin_registrant.dart
 lib/firebase_options.dart
@@ -48,4 +50,3 @@ app.*.map.json
 /android/app/release
 /android/app/google-services.json
 
-/ios/Runner/GoofleService-info.plist

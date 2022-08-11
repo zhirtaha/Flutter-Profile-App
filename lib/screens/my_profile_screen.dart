@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_profile_app/screens/message_screen.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -134,7 +135,13 @@ class MyProfileScreen extends StatelessWidget {
                     ),
                     FloatingActionButton(
                       backgroundColor: HexColor('C7E4FF'),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) {
+                            return MessageScreen();
+                          },
+                        ));
+                      },
                       child: FaIcon(
                         FontAwesomeIcons.envelope,
                         color: HexColor('949494'),
